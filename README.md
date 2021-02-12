@@ -5,11 +5,11 @@ This project includes source to create a binary PowerShell cmdlet.  The module w
 
 The TFVC PowerShell module is intended to aid in TFS source control operations.  Similiar to using Visual Studio or tf.exe the PowerShell should provide the same capabilities.
 
-##Compile Requirements
+## Compile Requirements
 1. Visual Studio or Xamarin
 2. .NET Framework 4.6 or Mono 
 
-##Runtime Requirements
+## Runtime Requirements
 1. PowerShell 3.0 or later
 2. .NET Framework 4.6 or later
 
@@ -17,7 +17,7 @@ The TFVC PowerShell module is intended to aid in TFS source control operations. 
 ## Example
 To unload and load the compiled module the below syntax can be used:
 
-###Unload Module
+### Unload Module
 ```powershell
 ###################################################################################
 # Unload module
@@ -29,7 +29,7 @@ if ((Get-Module -Name "TFVC.PowerShell") -ne $null) {
 ###################################################################################
 ```
 
-###Import Module
+### Import Module
 ```powershell
 ###################################################################################
 # Load module
@@ -37,13 +37,13 @@ if ((Get-Module -Name "TFVC.PowerShell") -ne $null) {
 Import-Module "TFVC.PowerShell.psd1" -Force
 ###################################################################################
 ```
-###List Modules
+### List Modules
 ```powershell
 Get-Module
 Get-Command -Module "PwC.GATT.PowerShell.Common" -CommandType cmdlet | Format-Table
 ```
 
-##Features
+## Features
 The below features should be available to the PowerShell cmdlet's 
 
 1. Connect to TFS (Connect-Tfs)
@@ -61,7 +61,7 @@ The below features should be available to the PowerShell cmdlet's
 13. Undo item from TFS (Undo-TfsItem)
 14. Create branch in TFS (Create-TfsBranch)
 
-###Connect to TFS server
+### Connect to TFS server
 ```powershell
 ###################################################################################
 # Connect to TFS
@@ -71,7 +71,7 @@ Connect-Tfs -Uri "http://mytfsserver.localhost.com:8080/tfs/DefaultCollection"
 ###################################################################################
 ```
 
-###Disconnect from TFS server
+### Disconnect from TFS server
 ```powershell
 ###################################################################################
 # Disconnect from TFS
